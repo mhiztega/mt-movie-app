@@ -8,7 +8,29 @@ import AddFavourites from './components/AddFavourites';
 import RemoveFavourites from './components/RemoveFavourites';
 
 const App = () => {
-  const[movies, setMovies] = useState([]);
+  const[movies, setMovies] = useState([
+    {
+      "Title": "Under Paris",
+      "Year": "2024",
+      "imdbID": "tt13964390",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDM5ODBiN2ItOTk4Yi00NzgyLWE2YTktYzhjYTc2ODE4ZTE4XkEyXkFqcGc@._V1_SX300.jpg"
+  },
+  {
+      "Title": "Under the Roofs of Paris",
+      "Year": "1930",
+      "imdbID": "tt0021409",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZGJiYjkxZTktNDA0OC00MzkxLThjMDgtZTBkZWVjY2Q5ZDM2XkEyXkFqcGdeQXVyNTUyMTMyMDg@._V1_SX300.jpg"
+  },
+  {
+      "Title": "Paris Under Watch",
+      "Year": "2012",
+      "imdbID": "tt2106321",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGM5YTVhNjItNDNkZi00NmUwLTg5YzYtYjE2MmJhZDkyZWVjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+  },
+  ]);
   const[favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState('');
 
