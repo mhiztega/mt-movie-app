@@ -48,7 +48,7 @@ const App = () => {
 
   const removeFavouriteMovie = (movie) => {
     const newFavouriteList = favourites.filter(
-      (favourite) => favourite.imdbID !== movie.imdbIB
+      (favourite) => favourite.imdbID !== movie.imdbID
     );
 
     setFavourites(newFavouriteList);
